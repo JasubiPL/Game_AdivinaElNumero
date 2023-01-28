@@ -9,8 +9,7 @@ import githubIcon from '../img/github-icon.png';
 import twitterIcon from '../img/twitter-icon.png';
 import linkedinIcon from '../img/linkedin-icon.png';
 
-const disculpas = "Disculpa, por el momento esta opcion no esta disponible"
-;
+const disculpas = "Disculpa, por el momento esta opcion no esta disponible";
 
 const pantallaDeInicio = document.getElementById("pantallaDeInicio");
 
@@ -45,7 +44,8 @@ const btnJugar = document.getElementById("btnJugar").addEventListener("click", p
 const btnMasApps = document.getElementById("btnMasApps").addEventListener("click", pressMasApps);
 
 function pressJugar(){
-    dispararNotificacion(disculpas);
+    pantallaDeInicio.style.display= "none";
+    pantallaDeNiveles.style.display = "grid";
 }
 
 function pressMasApps(){
