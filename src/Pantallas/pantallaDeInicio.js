@@ -1,4 +1,6 @@
 import '../css/pantallaDeInicio.css';
+import {dispararNotificacion} from '../componentes/notificacionesPush'
+
 import logoJuego from '../img/logo-juego.png';
 import jugaricon from '../img/play-verde-icon.png';
 import googlePlayIcon from '../img/googleplay-azul-icon.png';
@@ -6,6 +8,9 @@ import facebookIcon from '../img/facebook-icon.png';
 import githubIcon from '../img/github-icon.png';
 import twitterIcon from '../img/twitter-icon.png';
 import linkedinIcon from '../img/linkedin-icon.png';
+
+const disculpas = "Disculpa, por el momento esta opcion no esta disponible"
+;
 
 const pantallaDeInicio = document.getElementById("pantallaDeInicio");
 
@@ -28,10 +33,10 @@ pantallaDeInicio.innerHTML = `
         <div class="follow">
             <p>Sigueme como @jasubip</p>
             <div class="contenedorFollowIcon">
-                <img src="${facebookIcon}" />
-                <img src="${githubIcon}" />
-                <img src="${twitterIcon}" />
-                <img src="${linkedinIcon}" />
+                <a href="https://www.facebook.com/JasubiP/"><img src="${facebookIcon}" /></a>
+                <a href="https://github.com/JasubiPL"><img src="${githubIcon}" /></a>
+                <a href="https://twitter.com/JasubiP"><img src="${twitterIcon}" /></a>
+                <a href="https://www.linkedin.com/in/jasubip/"><img src="${linkedinIcon}" /></a>
             </div>
         </div>
     </div>
@@ -40,10 +45,10 @@ const btnJugar = document.getElementById("btnJugar").addEventListener("click", p
 const btnMasApps = document.getElementById("btnMasApps").addEventListener("click", pressMasApps);
 
 function pressJugar(){
-    alert("play");
+    dispararNotificacion(disculpas);
 }
 
 function pressMasApps(){
-    alert("Esta funcion no esta disponible por el momento")
+    dispararNotificacion(disculpas);
 }
 
