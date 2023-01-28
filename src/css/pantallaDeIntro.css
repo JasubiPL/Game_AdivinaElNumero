@@ -1,3 +1,6 @@
+/* #pantallaDeIntro{
+    display: none;
+} */
 .contenedorPantallaDeIntro{
     width: 100vw;
     height: 100vh;

@@ -16,5 +16,6 @@ pantallaDeIntro.innerHTML = `
 `;
 
 setTimeout(() => {
-    pantallaDeIntro.style.display = "none";
-},3000)
+    pantallaDeIntro.remove();
+    pantallaDeInicio.style.display = "flex";
+},4000);

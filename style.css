@@ -1,3 +1,23 @@
+:root{
+  --color-azul: #42E0FD;
+  --color-azulOpacity: rgb(66, 224, 253, .1);
+  --color-azulFuerte: #000020;
+  --color-verde: #01FE44;
+  --color-verdeOpacity: rgb(1, 254, 68, .1);
+  --color-verdeOpaco: #0CA789;
+  --color-verdeOpacoOpacity: rgb(12, 167, 137, .1);
+  --color-naranja: #fc2205;
+  --color-naranjaOpacity: rgb(252, 34, 5, .1);
+  --color-rojo: #ff0000;
+  --color-rojoOpacity: rgb(255, 0, 0, .1);
+  --color-amarillo: #ffe600;
+  --color-amarilloOpacity: rgb(255, 230, 0, .1);
+}
+
+@font-face {
+  font-family: spoof;
+  src: url("./src/assets/SpoofTrial-Light.otf");
+}
 *{
   margin: 0;
   padding: 0;

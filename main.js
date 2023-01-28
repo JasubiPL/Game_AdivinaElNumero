@@ -1,5 +1,7 @@
 import './style.css'
+import './src/componentes/notificacionesPush'
 import './src/Pantallas/pantallaDeIntro'
+import './src/Pantallas/pantallaDeInicio'
 
 // import javascriptLogo from './javascript.svg'
 // import { setupCounter } from './counter.js'
