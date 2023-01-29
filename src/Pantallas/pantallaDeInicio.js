@@ -1,4 +1,5 @@
 import '../css/pantallaDeInicio.css';
+import musicafondo from '../assets/musicadefondo.mp3'
 import {dispararNotificacion} from '../componentes/notificacionesPush'
 
 import logoJuego from '../img/logo-juego.png';
@@ -15,6 +16,7 @@ const pantallaDeInicio = document.getElementById("pantallaDeInicio");
 
 
 pantallaDeInicio.innerHTML = `
+
     <div class="contenedorPantallaDeInicio">
         <img class="logoJuego" src="${logoJuego}" />
 
@@ -40,6 +42,7 @@ pantallaDeInicio.innerHTML = `
             <p>Desarrollado por JasubiP ®</p>
         </div>
     </div>
+    <audio src="${musicafondo}" autoplay loop/><audio>
 `;
 const btnJugar = document.getElementById("btnJugar").addEventListener("click", pressJugar);
 const btnMasApps = document.getElementById("btnMasApps").addEventListener("click", pressMasApps);
@@ -47,6 +50,7 @@ const btnMasApps = document.getElementById("btnMasApps").addEventListener("click
 function pressJugar(){
     pantallaDeInicio.style.display= "none";
     pantallaDeNiveles.style.display = "grid";
+    coinEffect.play();
 
 }
 

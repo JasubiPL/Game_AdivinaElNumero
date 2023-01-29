@@ -10,7 +10,7 @@ const pantallaNivelPrincipiante = document.getElementById("pantallaNivelPrincipi
 
 pantallaNivelPrincipiante.innerHTML =`
     <div class="headerNivelPrincipiante">
-        <img src="${arrowIcon}" />
+        <img id="btnRegresarNivelPrincipiante" src="${arrowIcon}" />
         <img id="bot" src="${robotIcon}" />
         <p>Piñeyro-bot</p>
         <img src="${menuPointIcon}" />
@@ -28,10 +28,16 @@ pantallaNivelPrincipiante.innerHTML =`
 
 let valorInsertado = document.getElementById("inputNivelPrincipiante");
 const btnSend = document.getElementById("btnSend").addEventListener("click", pressSend);
-
+const btnRegresarNivelPrincipiante = document.getElementById("btnRegresarNivelPrincipiante").addEventListener("click", pressBtnRegresarNivelPrincipiante);
 
 function pressSend(){
     compararNumeros(valorInsertado.value);
     valorInsertado.value = "";
     
+}
+
+export function pressBtnRegresarNivelPrincipiante(){
+    pantallaNivelPrincipiante.style.display = "none";
+    pantallaDeNiveles.style.display ="grid";
+
 }

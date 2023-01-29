@@ -1,11 +1,12 @@
 .printMensajeUsuario{
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .8);
     border: 3px solid var(--color-azul);
     border-radius: 5px;
     align-self: flex-end;
     padding: 5px;
     font-weight: bolder;
     font-size: 24px;
+    animation: animacionMensajes .75s;
 }
 
 .printMensajeBot{
@@ -17,4 +18,17 @@
     font-weight: bolder;
     font-size: 16px;
     max-width: 70%;
+    animation: animacionMensajes .75s;
+}
+
+@keyframes animacionMensajes {
+    0%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(1);
+    }
 }

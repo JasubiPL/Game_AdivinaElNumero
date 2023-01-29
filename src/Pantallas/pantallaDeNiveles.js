@@ -65,11 +65,13 @@ function pressRegresar(){
 }
 function pressInfo(){
     crearPantallaDeAyuda();
+    coinEffect.play();
 }
 function pressPrincipiante(){
     inciarJuego();
     pantallaNivelPrincipiante.style.display = "grid";
     pantallaDeNiveles.style.display = "none";
+    coinEffect.play();
 }
 function pressNormal(){
     dispararNotificacion(disculpas);

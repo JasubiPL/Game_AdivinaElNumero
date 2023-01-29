@@ -1,8 +1,14 @@
+import {pressBtnRegresarNivelPrincipiante} from '../Pantallas/PantallaNivelPrincipiante'
+import {dispararMensajeJuegoGanado} from '../componentes/mensajeJuegoGanado'
 let numeroAleatorio = 0;
 
 
 export function inciarJuego(){
     console.log("inicia Juego");
+
+    const contenedorMensajesNivelPrincipiante = document.getElementById("contenedorMensajesNivelPrincipiante");
+    contenedorMensajesNivelPrincipiante.innerHTML = "<div></div>";//Borra el contenido dejado en el juego anterior
+
     setTimeout(mensajeDeBienvenida, 2000);
 
     numeroAleatorio = Math.round(Math.random() * 10);
@@ -21,10 +27,7 @@ export function compararNumeros(valorInsertado){
         console.log("correcto")
 
         setTimeout(() =>{
-            let printMensajeBot = document.createElement("p");
-            printMensajeBot.classList= "printMensajeBot";
-            printMensajeBot.innerText = "Es Corecto";
-            contenedorMensajesNivelPrincipiante.insertAdjacentElement("afterbegin",printMensajeBot);
+            dispararMensajeJuegoGanado();
         },1000);
      }
      else if(numeroAleatorio > valorInsertado){
