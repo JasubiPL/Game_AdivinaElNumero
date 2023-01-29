@@ -8,6 +8,7 @@ import dragonIcon from '../img/dragon-icon.png';
 import userIcon from '../img/user-icon.png';
 import {dispararNotificacion} from '../componentes/notificacionesPush'
 import{crearPantallaDeAyuda} from '../Pantallas/pantallaDeAyuda'
+import { inciarJuego } from '../componentes/logicaDeJuego';
 
 const pantallaDeNiveles = document.getElementById("pantallaDeNiveles");
 
@@ -66,7 +67,9 @@ function pressInfo(){
     crearPantallaDeAyuda();
 }
 function pressPrincipiante(){
-    dispararNotificacion(disculpas);
+    inciarJuego();
+    pantallaNivelPrincipiante.style.display = "grid";
+    pantallaDeNiveles.style.display = "none";
 }
 function pressNormal(){
     dispararNotificacion(disculpas);

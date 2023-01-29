@@ -5,6 +5,7 @@ import './src/Pantallas/pantallaDeInicio'
 import './src/Pantallas/pantallaDeNiveles'
 import './src/Pantallas/pantallaDeAyuda'
 import './src/Pantallas/PantallaNivelPrincipiante'
+import './src/componentes/logicaDeJuego'
 
 // import javascriptLogo from './javascript.svg'
 // import { setupCounter } from './counter.js'

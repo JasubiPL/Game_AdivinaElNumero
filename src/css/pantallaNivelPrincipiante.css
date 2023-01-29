@@ -11,6 +11,7 @@
     display: grid;
     grid-template-rows: 1fr 10fr 1fr;
     font-family: spoof;
+    display: none;
 }
 
 .headerNivelPrincipiante{
@@ -32,7 +33,13 @@
     height: 50px;
 }
 
-
+#contenedorMensajesNivelPrincipiante{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    gap: 10px;
+    overflow: scroll;
+}
 
 
 

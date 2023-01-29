@@ -1,0 +1,20 @@
+.printMensajeUsuario{
+    background-color: rgba(255, 255, 255, .5);
+    border: 3px solid var(--color-azul);
+    border-radius: 5px;
+    align-self: flex-end;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.printMensajeBot{
+    background-color: rgba(255, 255, 255, .8);
+    border: 3px solid var(--color-verde);
+    border-radius: 10px;
+    align-self: flex-start;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    max-width: 70%;
+}
