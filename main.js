@@ -4,6 +4,7 @@ import './src/Pantallas/pantallaDeIntro'
 import './src/Pantallas/pantallaDeInicio'
 import './src/Pantallas/pantallaDeNiveles'
 import './src/Pantallas/pantallaDeAyuda'
+import './src/Pantallas/PantallaNivelPrincipiante'
 
 // import javascriptLogo from './javascript.svg'
 // import { setupCounter } from './counter.js'

@@ -30,13 +30,14 @@ pantallaDeInicio.innerHTML = `
         </div>
 
         <div class="follow">
-            <p>Sigueme como @jasubip</p>
+            
             <div class="contenedorFollowIcon">
                 <a href="https://www.facebook.com/JasubiP/"><img src="${facebookIcon}" /></a>
                 <a href="https://github.com/JasubiPL"><img src="${githubIcon}" /></a>
                 <a href="https://twitter.com/JasubiP"><img src="${twitterIcon}" /></a>
                 <a href="https://www.linkedin.com/in/jasubip/"><img src="${linkedinIcon}" /></a>
             </div>
+            <p>Desarrollado por JasubiP ®</p>
         </div>
     </div>
 `;
