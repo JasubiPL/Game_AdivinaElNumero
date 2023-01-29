@@ -7,6 +7,7 @@ import fireIcon from '../img/fire-icon.png';
 import dragonIcon from '../img/dragon-icon.png';
 import userIcon from '../img/user-icon.png';
 import {dispararNotificacion} from '../componentes/notificacionesPush'
+import{crearPantallaDeAyuda} from '../Pantallas/pantallaDeAyuda'
 
 const pantallaDeNiveles = document.getElementById("pantallaDeNiveles");
 
@@ -62,7 +63,7 @@ function pressRegresar(){
     pantallaDeInicio.style.display = "flex";
 }
 function pressInfo(){
-    dispararNotificacion(disculpas);
+    crearPantallaDeAyuda();
 }
 function pressPrincipiante(){
     dispararNotificacion(disculpas);

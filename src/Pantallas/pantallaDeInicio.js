@@ -46,6 +46,8 @@ const btnMasApps = document.getElementById("btnMasApps").addEventListener("click
 function pressJugar(){
     pantallaDeInicio.style.display= "none";
     pantallaDeNiveles.style.display = "grid";
+    pantallaDeNiveles.style.animation = "entraPantalla .5s linear";
+
 }
 
 function pressMasApps(){

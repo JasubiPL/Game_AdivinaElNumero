@@ -1,7 +1,11 @@
 #pantallaDeInicio{
     display: none;
+    
 }
 .contenedorPantallaDeInicio{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     /* background-color: red; */
@@ -66,5 +70,4 @@
 .contenedorFollowIcon img{
     width: 50px;
 }
-
 

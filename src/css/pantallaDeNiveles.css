@@ -1,5 +1,8 @@
 #pantallaDeNiveles{
     /* background-color: red; */
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -101,4 +104,13 @@
 
 #btnInfo{
     background-color: var(--color-verdeOpaco);
+}
+
+@keyframes entraPantalla {
+    from{
+        left: 100vw;
+    }
+    to{
+        left: 0;
+    }
 }
