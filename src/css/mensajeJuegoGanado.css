@@ -12,6 +12,7 @@
 }
 
 .contenedorMensajeJuegoGanado{
+    position: relative;
     width: 80%;
     display: flex;
     gap: 20px;
@@ -36,6 +37,14 @@
     color: #fff;
     font-family: spoof;
     font-size: 18px;
+}
+
+.contenedorMensajeJuegoGanado p{
+    position: absolute;
+    color: #fff;
+    font-weight: bolder;
+    font-family: spoof;
+    font-size: 36px;
 }
 
 @keyframes animacionJuegoGanado {

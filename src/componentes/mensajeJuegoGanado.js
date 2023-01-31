@@ -10,6 +10,7 @@ export function dispararMensajeJuegoGanado(){
     mensajeJuegoGanado.innerHTML=`
         <div class="contenedorMensajeJuegoGanado">
             <img src="${imgJuegoGanado}" />
+            <p>¡Ganaste!</P>
             <button id="btnVolverAJugar">Volver a jugar</button>
         </div>
     `;

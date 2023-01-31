@@ -2,7 +2,6 @@ import '../css/pantallaNivelPrincipiante.css';
 import '../css/mensajes.css';
 import arrowIcon from '../img/arrow-left-icon.png';
 import robotIcon from '../img/user-icon.png';
-import menuPointIcon from '../img/menuPoint-icon.png';
 import sendIcon from '../img/send-icon.png';
 import { compararNumeros } from '../componentes/logicaDeJuego';
 
@@ -13,7 +12,6 @@ pantallaNivelPrincipiante.innerHTML =`
         <img id="btnRegresarNivelPrincipiante" src="${arrowIcon}" />
         <img id="bot" src="${robotIcon}" />
         <p>Piñeyro-bot</p>
-        <img src="${menuPointIcon}" />
     </div>
     <div id="contenedorMensajesNivelPrincipiante">
     </div>
